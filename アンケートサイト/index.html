@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>アンケートサイト</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 class="answer-title">アンケート</h1>
+
+    <!-- main -->
+    <div class="main">
+      <!-- 名前 -->
+      <p class="Form-Item">
+        <span class="Form-Item-Label-Required Form-Item-Label">必須</span>
+        <span class="Form-Item-Label">名前</span><br />
+        <input type="text" class="Form-Item-Input" id="name" />
+      </p>
+      <!-- 年齢 -->
+      <p class="Form-Item">
+        <span class="Form-Item-Label-Required Form-Item-Label">必須</span>
+        <span class="Form-Item-Label">年齢</span><br />
+        <input type="number" class="Form-Item-Input" id="age" />
+      </p>
+      <!-- 性別 -->
+      <p class="Form-Item">
+        <span class="Form-Item-Label-Required Form-Item-Label">必須</span>
+        <span class="Form-Item-Label">性別</span><br />
+        <label
+          ><input
+            type="radio"
+            class="Form-Item-radio"
+            id="gender_man"
+            name="gender"
+          /><span class="Form-Item-radio-text">男性</span></label
+        >
+        <label
+          ><input
+            type="radio"
+            class="Form-Item-radio"
+            id="gender_woman"
+            name="gender"
+          /><span class="Form-Item-radio-text">女性</span></label
+        >
+      </p>
+      <!-- 電話番号 -->
+      <p class="Form-Item">
+        <span class="Form-Item-Label-Required Form-Item-Label">必須</span>
+        <span class="Form-Item-Label">電話番号</span><br />
+        <input type="tel" class="Form-Item-Input" id="tel" />
+      </p>
+      <!-- メールアドレス -->
+      <p class="Form-Item">
+        <span class="Form-Item-Label-Required Form-Item-Label">必須</span>
+        <span class="Form-Item-Label">メールアドレス</span><br />
+        <input type="email" class="Form-Item-Input" id="email" />
+      </p>
+      <!-- 出身地 -->
+      <p class="Form-Item">
+        <span class="Form-Item-Label-Required Form-Item-Label">必須</span>
+        <span class="Form-Item-Label">出身地</span><br />
+        <select class="Form-Item-Input" id="todofuken">
+          <option value="北海道">北海道</option>
+          <option value="東北">東北</option>
+          <option value="関東">関東</option>
+          <option value="中部">中部</option>
+          <option value="近畿">近畿</option>
+          <option value="中国">中国</option>
+          <option value="四国">四国</option>
+          <option value="九州">九州</option>
+          <option value="沖縄">沖縄</option>
+        </select>
+      </p>
+
+      <!-- 任意 -->
+      <p class="Form-Item">
+        <span
+          class="Form-Item-Label-Required Form-Item-Label Form-Item-Label-Required-nini"
+          >任意</span
+        >
+        <span class="Form-Item-Label">備考</span><br />
+        <textarea class="Form-Item-Textarea" id="Biko"></textarea>
+        <input type="button" class="Form-Btn" value="送信" />
+      </p>
+    </div>
+
+    <!-- jQueryファイル読み込み -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./jquery.js">
+      jQuery
+    </script>
+    <!-- JavaScriptファイル読み込み -->
+    <script src="./script.js">
+      JavaScript
+    </script>
+  </body>
+</html>
